@@ -1,7 +1,6 @@
 # Builder to compile application
 FROM node:12 AS builder
 WORKDIR /usr/app
-RUN npm set registry https://code-repo.wwtatc.com/repository/atc-npm
 COPY package*.json gulpfile.js tsconfig.json ./
 COPY types types/
 RUN npm ci
@@ -12,7 +11,6 @@ RUN npm run compile
 FROM node:12
 ENV NODE_ENV=production
 WORKDIR /usr/app
-RUN npm set registry https://code-repo.wwtatc.com/repository/atc-npm
 COPY package*.json ./
 RUN npm ci
 COPY --from=builder /usr/app/release/ release/

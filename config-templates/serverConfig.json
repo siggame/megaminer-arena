@@ -1,4 +1,4 @@
 {
-  "sessionSecret": "<~progen-test.SessionSecret~>",
-  "port": 3000
+  "sessionSecret": "",
+  "port": 5000
 }

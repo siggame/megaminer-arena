@@ -10,7 +10,6 @@ import * as fs from "fs";
 import { stream } from "../utils/logger";
 import { properties } from "../utils/properties";
 import { RouteConfig, swaggerSetup } from "../services/swaggerService";
-import { authenticate } from "./middleware/auth";
 import { handleErrors } from "./middleware/errorHandler";
 
 export const app = express();
@@ -65,10 +64,6 @@ app.get(
 app.get("/swagger", (_req, res) => {
   res.json(swaggerSetup.getSwaggerDoc());
 });
-
-// Call authenticate every time the app receives a request
-// Placed after swagger routes so we don't need to auth for those
-app.use(authenticate);
 
 // Add dynamic routes from routes/{name}Router.ts as "/{name}"
 fs.readdirSync(`${__dirname}/routes`).forEach((file: string) => {

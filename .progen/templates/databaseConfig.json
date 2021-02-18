@@ -1,3 +1,0 @@
-{
-  "mongoUri": "<~global.mongo-prefix~>{{{componentName}}}<~global.mongo-suffix~>"
-}
