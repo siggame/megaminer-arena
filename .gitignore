@@ -1,0 +1,14 @@
+# Folder metadata
+.DS_Store
+
+# Configuration files
+configs
+
+# Installed dependency code
+node_modules
+
+# Compiled application
+release
+
+# Express session information
+sessions

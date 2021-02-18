@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "esnext",
+    "allowJs": true,
+    "strictNullChecks": false
+  },
+  "exclude": ["release", "gulpfile.js"]
+}
