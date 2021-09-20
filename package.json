@@ -1,5 +1,5 @@
 {
-  "name": "mmai-arena",
+  "name": "megaminer-arena",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -22,14 +22,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/siggame/mmai-arena.git"
+    "url": "git+https://github.com/siggame/megaminer-arena.git"
   },
   "keywords": [],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/siggame/mmai-arena/issues"
+    "url": "https://github.com/siggame/megaminer-arena/issues"
   },
-  "homepage": "https://github.com/siggame/mmai-arena#readme",
+  "homepage": "https://github.com/siggame/megaminer-arena#readme",
   "dependencies": {
     "axios": "^0.21.0",
     "body-parser": "^1.19.0",

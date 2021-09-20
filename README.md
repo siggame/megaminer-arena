@@ -1,4 +1,4 @@
-# MMAI Arena
+# MegaMiner Arena
 
 ## How to Run
 Copy the `config-templates` folder into a new folder called `configs` and fill out the JSON files.

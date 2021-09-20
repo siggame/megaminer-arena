@@ -14,7 +14,7 @@ export const swaggerRoutes: Array<RouteConfig> = [
           name: "mode",
           in: "body",
           required: true,
-          type: "number",
+          type: "Mode",
         },
       ],
       responses: {},
